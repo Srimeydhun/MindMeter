@@ -1,0 +1,311 @@
+.theme-toggle {
+  display: inline-grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid #dfe3ec;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #6546e8;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: #f4f1ff;
+  border-color: #cfc5ff;
+  transform: translateY(-1px);
+}
+
+.theme-toggle svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.theme-toggle--floating {
+  position: fixed;
+  top: 14px;
+  right: 16px;
+  z-index: 200;
+}
+
+.auth-page .auth-theme-toggle {
+  position: fixed;
+  top: 18px;
+  right: 7%;
+  z-index: 200;
+}
+
+@media (max-width: 600px) {
+  .theme-toggle {
+    width: 44px;
+    height: 44px;
+  }
+
+  .auth-page .auth-theme-toggle {
+    top: 12px;
+    right: 5%;
+  }
+
+  .navbar .nav-buttons {
+    flex-wrap: nowrap;
+  }
+
+  .navbar .nav-buttons .btn {
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+
+  .dashboard-nav-right,
+  .teacher-nav-right,
+  .student-quiz-nav-actions {
+    gap: 8px;
+  }
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+  color: #e6e9f2;
+  background: #11131b;
+}
+
+html[data-theme='dark'] body {
+  background: #11131b;
+  color: #e6e9f2;
+}
+
+html[data-theme='dark'] .app-container,
+html[data-theme='dark'] .placeholder-page,
+html[data-theme='dark'] .student-dashboard,
+html[data-theme='dark'] .teacher-dashboard,
+html[data-theme='dark'] .student-quiz-page {
+  background: #11131b;
+  color: #e6e9f2;
+}
+
+html[data-theme='dark'] .navbar,
+html[data-theme='dark'] .navbar-menu,
+html[data-theme='dark'] .dashboard-navbar,
+html[data-theme='dark'] .teacher-navbar,
+html[data-theme='dark'] .student-quiz-navbar {
+  background: #191c27;
+  border-color: #303443;
+}
+
+html[data-theme='dark'] .logo,
+html[data-theme='dark'] .hero h1,
+html[data-theme='dark'] .hero-content h1,
+html[data-theme='dark'] .preview-header h3,
+html[data-theme='dark'] .section-heading h2,
+html[data-theme='dark'] .feature-card h3,
+html[data-theme='dark'] .auth-heading h1,
+html[data-theme='dark'] .form-group label,
+html[data-theme='dark'] .teacher-brand,
+html[data-theme='dark'] .teacher-section-heading h2,
+html[data-theme='dark'] .teacher-subject-card h3,
+html[data-theme='dark'] .quiz-management-header h4,
+html[data-theme='dark'] .quiz-form h4,
+html[data-theme='dark'] .quiz-card-info h4,
+html[data-theme='dark'] .dashboard-brand,
+html[data-theme='dark'] .section-heading h2,
+html[data-theme='dark'] .student-quiz-brand,
+html[data-theme='dark'] .student-quiz-card h2,
+html[data-theme='dark'] .student-quiz-result-grid dd {
+  color: #e6e9f2;
+}
+
+html[data-theme='dark'] .hero {
+  background:
+    radial-gradient(ellipse at 85% 15%, #302650 0%, transparent 38%),
+    linear-gradient(135deg, #151722, #1d1a2b);
+}
+
+html[data-theme='dark'] .dashboard-preview,
+html[data-theme='dark'] .feature-card,
+html[data-theme='dark'] .auth-form,
+html[data-theme='dark'] .stat-card,
+html[data-theme='dark'] .subject-card,
+html[data-theme='dark'] .empty-state,
+html[data-theme='dark'] .practice-summary,
+html[data-theme='dark'] .teacher-stat-card,
+html[data-theme='dark'] .teacher-panel,
+html[data-theme='dark'] .quiz-form,
+html[data-theme='dark'] .student-quiz-card {
+  background: #1b1e2a;
+  border-color: #343849;
+  color: #e6e9f2;
+}
+
+html[data-theme='dark'] .stat-card,
+html[data-theme='dark'] .teacher-subject-card,
+html[data-theme='dark'] .quiz-card {
+  background: #202331;
+  border-color: #383c4e;
+}
+
+html[data-theme='dark'] .progress-card,
+html[data-theme='dark'] .about-section {
+  background: #201e30;
+}
+
+html[data-theme='dark'] .feature-card:hover {
+  border-color: #7765d8;
+}
+
+html[data-theme='dark'] footer {
+  background: #0c0e14;
+}
+
+html[data-theme='dark'] .hero p,
+html[data-theme='dark'] .section-heading p,
+html[data-theme='dark'] .feature-card p,
+html[data-theme='dark'] .about-section p,
+html[data-theme='dark'] .auth-heading p,
+html[data-theme='dark'] .form-group small,
+html[data-theme='dark'] .auth-switch,
+html[data-theme='dark'] .navbar nav a,
+html[data-theme='dark'] .status-dot,
+html[data-theme='dark'] .preview-bottom,
+html[data-theme='dark'] .dashboard-nav-right,
+html[data-theme='dark'] .student-role,
+html[data-theme='dark'] .stat-card-top,
+html[data-theme='dark'] .section-heading p,
+html[data-theme='dark'] .subject-card-heading p,
+html[data-theme='dark'] .available-quiz-subject,
+html[data-theme='dark'] .available-quiz-description,
+html[data-theme='dark'] .available-quiz-details,
+html[data-theme='dark'] .subject-score span,
+html[data-theme='dark'] .empty-state p,
+html[data-theme='dark'] .practice-summary p,
+html[data-theme='dark'] .dashboard-footer,
+html[data-theme='dark'] .dashboard-message p,
+html[data-theme='dark'] .teacher-section-heading p,
+html[data-theme='dark'] .teacher-stat-card p,
+html[data-theme='dark'] .teacher-subject-card p,
+html[data-theme='dark'] .teacher-empty-course p,
+html[data-theme='dark'] .quiz-management-header p,
+html[data-theme='dark'] .quiz-card-info p,
+html[data-theme='dark'] .student-quiz-result-grid dt,
+html[data-theme='dark'] .student-quiz-message p,
+html[data-theme='dark'] .student-quiz-save-status {
+  color: #aeb5c7;
+}
+
+html[data-theme='dark'] .preview-stats .stat-card,
+html[data-theme='dark'] .dashboard-preview .stat-card {
+  background: #202331;
+  border-color: #343849;
+}
+
+html[data-theme='dark'] .dashboard-preview .stat-card strong,
+html[data-theme='dark'] .stat-card h2,
+html[data-theme='dark'] .teacher-table td,
+html[data-theme='dark'] .student-quiz-option {
+  color: #e6e9f2;
+}
+
+html[data-theme='dark'] .progress-track,
+html[data-theme='dark'] .teacher-role,
+html[data-theme='dark'] .subject-avatar,
+html[data-theme='dark'] .quiz-meta span {
+  background-color: #302b48;
+}
+
+html[data-theme='dark'] .form-group input,
+html[data-theme='dark'] .form-group select,
+html[data-theme='dark'] .course-form-group input,
+html[data-theme='dark'] .course-form-group textarea,
+html[data-theme='dark'] .quiz-form-group input,
+html[data-theme='dark'] .quiz-form-group textarea,
+html[data-theme='dark'] .quiz-form-group select,
+html[data-theme='dark'] .student-quiz-option {
+  background: #151822;
+  border-color: #3b4052;
+  color: #e6e9f2;
+}
+
+html[data-theme='dark'] .form-group input::placeholder,
+html[data-theme='dark'] .course-form-group input::placeholder,
+html[data-theme='dark'] .course-form-group textarea::placeholder,
+html[data-theme='dark'] .quiz-form-group input::placeholder,
+html[data-theme='dark'] .quiz-form-group textarea::placeholder {
+  color: #8991a5;
+}
+
+html[data-theme='dark'] .btn-outline,
+html[data-theme='dark'] .student-quiz-secondary-button,
+html[data-theme='dark'] .cancel-edit-button {
+  background: #202331 !important;
+  color: #b8aaff !important;
+  border-color: #6255a5 !important;
+}
+
+html[data-theme='dark'] .btn-outline:hover,
+html[data-theme='dark'] .student-quiz-secondary-button:hover {
+  background: #2c2940 !important;
+}
+
+html[data-theme='dark'] .teacher-table th {
+  background: #202331;
+  color: #b9c0d0;
+}
+
+html[data-theme='dark'] .teacher-table th,
+html[data-theme='dark'] .teacher-table td {
+  border-color: #343849;
+}
+
+html[data-theme='dark'] .teacher-empty-course,
+html[data-theme='dark'] .quiz-cancel-button {
+  background: #202331;
+  border-color: #3b4052;
+  color: #d7dbea;
+}
+
+html[data-theme='dark'] .quiz-management {
+  border-color: #3b4052;
+}
+
+html[data-theme='dark'] .student-quiz-option:has(input:checked) {
+  background: #302b48;
+  border-color: #7765d8;
+}
+
+html[data-theme='dark'] .student-quiz-paused {
+  background: #302b48;
+  border-color: #7765d8;
+  color: #e6e9f2;
+}
+
+html[data-theme='dark'] .student-quiz-timer-action {
+  background: #242736;
+  color: #c5baff;
+  border-color: #7765d8;
+}
+
+html[data-theme='dark'] .theme-toggle {
+  background: #242736;
+  border-color: #454a5e;
+  color: #f2c96d;
+}
+
+html[data-theme='dark'] .navbar-menu-toggle {
+  background: #242736;
+  border-color: #454a5e;
+  color: #b8aaff;
+}
+
+html[data-theme='dark'] .theme-toggle:hover {
+  background: #303447;
+  border-color: #7565bb;
+}
